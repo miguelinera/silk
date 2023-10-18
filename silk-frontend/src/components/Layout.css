@@ -1,0 +1,24 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+  }
+  
+  .layout-logo {
+    margin: 20px;
+    max-width: 150px;
+  }
+  
+  .layout-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+    width: 100%;
+    max-width: 800px;
+    background-color: transparent; /* Remove the background color */
+    padding: 20px;
+    margin: 20px;
+  }
+  
