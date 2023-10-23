@@ -1,8 +1,19 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3001;
 const mongoose = require('mongoose');
 const uri = "mongodb://localhost:27017/mydatabase";
+require('dotenv').config();
+const cors = require('cors');
+
+const corsOptions = {
+  origin: 'http://localhost:3000', // your frontend server
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204
+};
+
+app.use(cors(corsOptions));
 
 // Middleware for parsing JSON
 app.use(express.json());
